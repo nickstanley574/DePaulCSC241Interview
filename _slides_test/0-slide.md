@@ -9,5 +9,3 @@ layout: default
 
 ### Nicholas Stanley
 
-
-

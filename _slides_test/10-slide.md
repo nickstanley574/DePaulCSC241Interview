@@ -9,7 +9,6 @@ A common pattern in loops is to accumulate a value during the iteration of the l
 <style>
 pre {
         margin-top: 0em;
-
 }
 </style>
 

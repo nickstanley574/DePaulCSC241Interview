@@ -8,7 +8,8 @@ A list in python is just a sequence of objects.
 
 Lists are represented as a comma-separated sequence enclosed with square brackets.
 
-{% highlight python %}
+```python
+
 #          +----------------------------------- start of list with open square bracket [
 #          |
 #          |   +------------------------------- item in a list can be any type they are strings
@@ -19,5 +20,5 @@ Lists are represented as a comma-separated sequence enclosed with square bracket
 #          |   |   |                       |
 #          ▼   ▼   ▼                       ▼
 vehicles = ['sedan','train','truck','plane']
-{% endhighlight %}
+```
 

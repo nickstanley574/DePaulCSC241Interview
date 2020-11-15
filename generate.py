@@ -18,7 +18,7 @@ f.write('layout: default\n')
 f.write('---\n')
 
 for l in lines:
-    if (l.rstrip() == "---"):
+    if (l.rstrip() == "---------------------------------------------------------------------------------------------------------------------------------"):
         f.close()
         file_number +=1
         slide_file = (f"./_slides_test/{file_number:02d}-slide.md")

@@ -6,9 +6,7 @@
 
 ### Nicholas Stanley
 
-
-
----
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Hello World
 
@@ -32,7 +30,7 @@
 '   * Backstop Solutions Group  2019 - Present'
 ```
 
----
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Overview and Goals
 
@@ -50,7 +48,7 @@
 
 * You are aware of what a `list` is and just need a quick refresher.
 
----
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Quick List Overview
 
@@ -58,7 +56,8 @@ A list in python is just a sequence of objects.
 
 Lists are represented as a comma-separated sequence enclosed with square brackets.
 
-{% highlight python %}
+```python
+
 #          +----------------------------------- start of list with open square bracket [
 #          |
 #          |   +------------------------------- item in a list can be any type they are strings
@@ -69,42 +68,39 @@ Lists are represented as a comma-separated sequence enclosed with square bracket
 #          |   |   |                       |
 #          ▼   ▼   ▼                       ▼
 vehicles = ['sedan','train','truck','plane']
-{% endhighlight %}
+```
 
----
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Quick List Overview
 
 A list's items are indexed starting a `0`.
-{% highlight python %}
+```python
 # index:
 #              0       1       2       3
 vehicles = ['sedan','train','truck','plane']
-{% endhighlight %}
-
+```
 
 Indexing operator: `list[index]`.
 
 Lets access `'trains'` which is the 2nd item, but b/c indexing starts at `0` the 2nd item is at index `1`.
-{% highlight python %}
+```python
 >>> vehicles = ['sedan','train','truck','plane']
 >>> vehicles[1]
 >>> 'train'
-{% endhighlight %}
+```
 
----
+---------------------------------------------------------------------------------------------------------------------------------
 
 # `for` Loop
 
 <img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
-
 
 A `for` loop is used for iterating over a sequence.
 
 **iterate** - the act of repeating; a repetition.
 
 In programing we call objects that can be iterated over **iterable**.
-
 
 ```python
 for <variable> in <sequence>:
@@ -113,10 +109,8 @@ for <variable> in <sequence>:
 ```
 {: style="font-size: 1.2em; padding-left: 40px; padding-top: 1px"}
 
+---------------------------------------------------------------------------------------------------------------------------------
 
-
-
----
 
 # `list` in `<sequence>`
 <img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
@@ -143,7 +137,9 @@ plane
 Done.
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
----
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 
 # Variable in `<sequence>`
 <img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
@@ -171,7 +167,8 @@ Done.
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
 
----
+---------------------------------------------------------------------------------------------------------------------------------
+
 #  The `range()` Function
 
 `range()` allows users to generate a object of numbers within a given range.
@@ -193,7 +190,7 @@ for i in range(6):
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
 
----
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Counter Loop
 
@@ -213,7 +210,7 @@ for i in range(6):
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
 
----
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Accumulator Loop
 
@@ -222,7 +219,6 @@ A common pattern in loops is to accumulate a value during the iteration of the l
 <style>
 pre {
         margin-top: 0em;
-
 }
 </style>
 
@@ -256,6 +252,7 @@ print(sum)
 
 **`sum`** is *incremented* by the value of **`num`**.
 
----
+---------------------------------------------------------------------------------------------------------------------------------
+
 
 # End
