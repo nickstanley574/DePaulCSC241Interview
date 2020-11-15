@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Hello World.
+# Hello World.
 
 Yep good old `hello world` cliché
 

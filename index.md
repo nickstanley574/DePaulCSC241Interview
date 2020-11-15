@@ -10,3 +10,12 @@ title: Home
     </li>
   {% endfor %}
 </ul>
+
+<ul>
+  {% for slide in site.slides_test %}
+    <li>
+      <a href="{{ slide.url }}">{{ slide.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>

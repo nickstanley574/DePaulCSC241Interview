@@ -2,21 +2,32 @@ html {
     background-color: rgb(47, 44, 44);
 }
 
+// h1 {
+//     font-size: 1.8em;
+// }
+h1 code {
+    font-size: 1.2em;
+}
+
+code {
+    font-size: 1.09em;
+}
+
 body {
     font-family: sans-serif;
     color: black;
     background-color: white;
-    font-size: x-large;
-    margin-top: 50px;
+    font-size: 1.6em;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
     height: 700px;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     padding-left: 30px;
     padding-right: 30px;
-    line-height: 1.4;
+    line-height: 1.333;
 }
 
 .content {
@@ -35,6 +46,10 @@ body {
     width: 50%;
     float: left;
     margin: 1em 0;
+}
+
+.PageNavigation a:hover {
+    font-weight: bold;
 }
 
 .PageNavigation .next {

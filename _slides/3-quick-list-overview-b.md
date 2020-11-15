@@ -2,12 +2,11 @@
 layout: default
 ---
 
-## Quick List Overview
+# Quick List Overview
 
 A list's items are indexed starting a zero. You can also thing of index has position. Like get me the item at position 2.
 {% highlight python %}
-# index:
-#              0       1       2       3
+# index       0       1       2       3
 vehicles = ['sedan','train','truck','plane']
 {% endhighlight %}
 
