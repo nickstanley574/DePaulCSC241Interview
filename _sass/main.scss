@@ -36,7 +36,8 @@ body {
 }
 
 .PageNavigation {
-    font-size: 20px;
+    padding-top: 65px;
+    font-size: 30px;
     display: block;
     width: auto;
     overflow: hidden;
@@ -44,13 +45,10 @@ body {
 
 .PageNavigation a {
     display: block;
-    width: 50%;
+    width: 20%;
     float: left;
     margin: 1em 0;
-}
-
-.PageNavigation a:hover {
-    font-weight: bold;
+    text-decoration: none;
 }
 
 .PageNavigation .next {

@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Variable in `<sequence>`
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="500" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
 ```python
 for <variable> in <sequence>:
     <indented code block>

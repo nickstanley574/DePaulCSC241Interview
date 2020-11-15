@@ -6,19 +6,22 @@
         {{ content }}
       </div>
 
-      <div class="PageNavigation">
-          {% if page.previous.url %}
-              <a class="prev" href="{{page.previous.url}}">&laquo; PREV</a>
-          {% else %}
-              <a class="prev">
-          {% endif %}
-          {% if page.next.url %}
-              <a class="next" href="{{page.next.url}}">NEXT &raquo;</a>
-          {% endif %}
-      </div>
+
 
   </body>
 
-
+      <div class="PageNavigation">
+          {% if page.previous.url %}
+              <a class="prev" href="{{page.previous.url}}">⬅️</a>
+          {% else %}
+              <a class="prev">
+          {% endif %}
+            <a class="mid"</a>
+            <a class="mid"</a>
+            <a class="mid"</a>
+          {% if page.next.url %}
+              <a class="next" href="{{page.next.url}}">➡️</a>
+          {% endif %}
+      </div>
 
 </html>

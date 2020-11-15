@@ -12,12 +12,25 @@
 
 # Hello World
 
-{% highlight python %}
+```python
 # Yep a good old hello world cliché.
 >>> print('Hello, world!')
 'Hello, world!'
-{% endhighlight %}
-
+>>>
+>>> import getpass
+>>> print(getpass.getuser())
+'nick.stanley'
+>>>
+>>> education()
+'DePaul University'
+'   * Bachelors in Computer Science             2016'
+'   * Masters in Science Software Engineering   2019'
+'       * Graduate Assistant Program Tutor      2016 - 2019'
+>>>
+>>> industry()
+'   * Discovery Education       2015 - 2019'
+'   * Backstop Solutions Group  2019 - Present'
+```
 
 ---
 
@@ -35,7 +48,7 @@
 
 * You already have a basic understanding of the Python syntax 🐍. (indentation, `print()`, variable expressions)
 
-* You are aware of what a list is and just need a quick refresher.
+* You are aware of what a `list` is and just need a quick refresher.
 
 ---
 
@@ -83,7 +96,7 @@ Lets access `'trains'` which is the 2nd item, but b/c indexing starts at `0` the
 
 # `for` Loop
 
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="500" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
 
 
 A `for` loop is used for iterating over a sequence.
@@ -106,7 +119,7 @@ for <variable> in <sequence>:
 ---
 
 # `list` in `<sequence>`
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="500" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
 
 ```python
 for <variable> in <sequence>:
@@ -133,7 +146,7 @@ Done.
 ---
 
 # Variable in `<sequence>`
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="500" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
 ```python
 for <variable> in <sequence>:
     <indented code block>
@@ -244,3 +257,5 @@ print(sum)
 **`sum`** is *incremented* by the value of **`num`**.
 
 ---
+
+# End
