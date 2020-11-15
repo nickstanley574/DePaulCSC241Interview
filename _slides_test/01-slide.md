@@ -5,8 +5,9 @@ layout: default
 # Hello World
 
 {% highlight python %}
-# Yep good old hello world cliché.
-print('Hello, world!')
+# Yep a good old hello world cliché.
+>>> print('Hello, world!')
+'Hello, world!'
 {% endhighlight %}
 
 

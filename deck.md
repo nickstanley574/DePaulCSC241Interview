@@ -13,8 +13,9 @@
 # Hello World
 
 {% highlight python %}
-# Yep good old hello world cliché.
-print('Hello, world!')
+# Yep a good old hello world cliché.
+>>> print('Hello, world!')
+'Hello, world!'
 {% endhighlight %}
 
 
@@ -24,7 +25,7 @@ print('Hello, world!')
 
 * A quick `list` review
 
-* Introduction into the For Loop
+* Introduction into the `for` loops.
 
 * Review the `range()` method.
 
@@ -82,7 +83,7 @@ Lets access `'trains'` which is the 2nd item, but b/c indexing starts at `0` the
 
 # `for` Loop
 
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="475" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="500" align="right" >
 
 
 A `for` loop is used for iterating over a sequence.
@@ -105,7 +106,7 @@ for <variable> in <sequence>:
 ---
 
 # `list` in `<sequence>`
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="475" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="500" align="right" >
 
 ```python
 for <variable> in <sequence>:
@@ -132,7 +133,7 @@ Done.
 ---
 
 # Variable in `<sequence>`
-
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="500" align="right" >
 ```python
 for <variable> in <sequence>:
     <indented code block>
@@ -147,8 +148,15 @@ vehicles = ['sedan','train','truck','plane']
 for i in vehicles:
     print(i)
 print('Done.')
+
+--- output ---
+sedan
+train
+truck
+plane
+Done.
 ```
-{: style="font-size: 1.1em; padding-left: 40px; padding-top: 1px"}
+{: style="font-size: 1.1em; padding-left: 40px;"}
 
 ---
 #  The `range()` Function
@@ -192,3 +200,47 @@ for i in range(6):
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
 
+---
+
+# Accumulator Loop
+
+A common pattern in loops is to accumulate a value during the iteration of the loop.
+
+<style>
+pre {
+        margin-top: 0em;
+
+}
+</style>
+
+```python
+numLst = [ 2, 4, 3, 7 ]     |    sum = 0
+n      =   2                |    sum = sum + n
+                            |    sum =  0  + 2 = 2
+n      =      4             |    sum = sum + n
+                            |    sum =  2  + 4 = 6
+n      =         3          |    sum = sum + n
+                            |    sum =  6  + 3 = 9
+n      =            7       |    sum = sum + n
+                            |    sum =  9  + 7 = 16
+sum = 16
+```
+{: style="font-size: 1.1em; padding-right: 70px; padding-top: 0px; float: right; margin-top: 0"}
+
+
+```python
+numLst = [2, 4, 3, 7]
+sum = 0
+for n in numLst:
+    sum = sum + n
+print(sum)
+
+--- output ---
+16
+
+```
+{: style="font-size: 1.1em; padding-left: 40px;"}
+
+**`sum`** is *incremented* by the value of **`num`**.
+
+---

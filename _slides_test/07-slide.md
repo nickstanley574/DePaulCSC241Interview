@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Variable in `<sequence>`
-
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="500" align="right" >
 ```python
 for <variable> in <sequence>:
     <indented code block>
@@ -18,6 +18,13 @@ vehicles = ['sedan','train','truck','plane']
 for i in vehicles:
     print(i)
 print('Done.')
+
+--- output ---
+sedan
+train
+truck
+plane
+Done.
 ```
-{: style="font-size: 1.1em; padding-left: 40px; padding-top: 1px"}
+{: style="font-size: 1.1em; padding-left: 40px;"}
 

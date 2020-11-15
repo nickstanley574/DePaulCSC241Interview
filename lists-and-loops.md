@@ -123,7 +123,6 @@ print('Start.')
 vehicles = ['sedan','train','truck','plane']
 for i in vehicles:
     print(i)
-
 print('Done.')
 ```
 In this one you can see instead of having the list itself in the `<sequence>` section we have the `vehicles` variable which is the same list defined above the for loop.
@@ -268,7 +267,7 @@ for i in range(6):
 
 ## Accumulator Loop
 
-* A common pattern in loops is to accumulate a value in every iteration of the loop.
+* A common pattern in loops is to accumulate a value during the iteration of the loop.
 * To accomplish this wee need a variable defined outside of the for loop that is modified during every for loop iteration.
 
 ```
@@ -287,7 +286,7 @@ The `sum` is *incremented* by the value of `num`.
 
 
 
-```
+```python
 numLst = [ 2, 4, 3, 7 ]     |    sum = 0
 
 n      =   2                |    sum = sum + n

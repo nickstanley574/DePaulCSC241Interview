@@ -21,7 +21,7 @@ for l in lines:
     if (l.rstrip() == "---"):
         f.close()
         file_number +=1
-        slide_file = (f"./_slides_test/{file_number}-slide.md")
+        slide_file = (f"./_slides_test/{file_number:02d}-slide.md")
         f = open(slide_file,"w+")
         f.write('---\n')
         f.write('layout: default\n')

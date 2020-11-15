@@ -6,7 +6,7 @@ layout: default
 
 * A quick `list` review
 
-* Introduction into the For Loop
+* Introduction into the `for` loops.
 
 * Review the `range()` method.
 
