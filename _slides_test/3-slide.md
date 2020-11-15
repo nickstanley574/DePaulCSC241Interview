@@ -20,3 +20,4 @@ Lists are represented as a comma-separated sequence enclosed with square bracket
 #          ▼   ▼   ▼                       ▼
 vehicles = ['sedan','train','truck','plane']
 {% endhighlight %}
+

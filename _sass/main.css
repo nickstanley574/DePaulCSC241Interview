@@ -1,0 +1,69 @@
+html {
+  background-color: #2f2c2c;
+}
+
+h1 code {
+  font-size: 1.2em;
+}
+
+code {
+  font-size: 1.09em;
+}
+
+body {
+  font-family: sans-serif;
+  color: black;
+  background-color: white;
+  font-size: 1.6em;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 720px;
+  border-style: solid;
+  border-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.333;
+}
+
+.content {
+  height: 85%;
+}
+
+.PageNavigation {
+  font-size: 20px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation a:hover {
+  font-weight: bold;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+.column-left {
+  float: left;
+  height: 100%;
+  width: 50%;
+  text-align: left;
+}
+
+.column-right {
+  float: right;
+  height: 100%;
+  width: 50%;
+  text-align: left;
+}
+/*# sourceMappingURL=main.css.map */

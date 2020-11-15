@@ -22,7 +22,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    height: 700px;
+    height: 720px;
     border-style: solid;
     border-color: white;
     padding-left: 30px;
@@ -54,4 +54,18 @@ body {
 
 .PageNavigation .next {
     text-align: right;
+}
+
+.column-left {
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: left;
+}
+
+.column-right {
+    float: right;
+    height: 100%;
+    width: 50%;
+    text-align: left;
 }
