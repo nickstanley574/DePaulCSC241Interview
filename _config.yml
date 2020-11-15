@@ -1,0 +1,13 @@
+
+future: false
+
+author: "Nick Stanley"
+
+highlighter: rouge
+plugins:
+  - jekyll-sitemap
+
+collections:
+  slides:
+    output: true
+    permalink: slide/:title/
