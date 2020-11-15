@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Quick List Overview
+# Quick `list` Overview
 
 A list's items are indexed starting a `0`.
 ```python

@@ -32,7 +32,7 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-# Overview and Goals
+# Overview and Assumptions
 
 * A quick `list` review
 
@@ -50,7 +50,7 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-# Quick List Overview
+# Quick `list` Overview
 
 A list in python is just a sequence of objects.
 
@@ -72,7 +72,7 @@ vehicles = ['sedan','train','truck','plane']
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-# Quick List Overview
+# Quick `list` Overview
 
 A list's items are indexed starting a `0`.
 ```python
@@ -94,7 +94,7 @@ Lets access `'trains'` which is the 2nd item, but b/c indexing starts at `0` the
 
 # `for` Loop
 
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 
 A `for` loop is used for iterating over a sequence.
 
@@ -113,7 +113,7 @@ for <variable> in <sequence>:
 
 
 # `list` in `<sequence>`
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 
 ```python
 for <variable> in <sequence>:
@@ -142,7 +142,7 @@ Done.
 
 
 # Variable in `<sequence>`
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 ```python
 for <variable> in <sequence>:
     <indented code block>
@@ -166,6 +166,23 @@ plane
 Done.
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+# Variable in `<sequence>`
+```python
+for <variable> in <sequence>:
+    <indented code block>
+<non-indented statement>
+```
+{: style="font-size: 1.1em; padding-left: 40px;"}
+
+<div style="padding-top: 50px;">
+<iframe width="85%" height="370" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=vehicles%20%3D%20%5B'sedan','train','truck','plane'%5D%0Afor%20i%20in%20vehicles%3A%0A%20%20%20%20print%28i%29%0Aprint%28'Done.'%29&codeDivHeight=400&codeDivWidth=500&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+</div>
+
+<img style="position:absolute; top:140px; left: 1200px;" src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="450" align="right" >
+
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -209,6 +226,9 @@ for i in range(6):
 4
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
+
+<iframe style="position:absolute; top:400px; left: 600px;" src="https://trinket.io/embed/python3/4281351607" width="1050" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen align="right"></iframe>
+
 
 ---------------------------------------------------------------------------------------------------------------------------------
 

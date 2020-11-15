@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Quick List Overview
+# Quick `list` Overview
 
 A list in python is just a sequence of objects.
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Overview and Goals
+# Overview and Assumptions
 
 * A quick `list` review
 

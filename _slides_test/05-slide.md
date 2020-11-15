@@ -4,7 +4,7 @@ layout: default
 
 # `for` Loop
 
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.jpg" alt="for_loop_flowchart" width="520" align="right" >
+<img style="padding-right: 50px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 
 A `for` loop is used for iterating over a sequence.
 

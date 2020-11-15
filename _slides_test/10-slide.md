@@ -2,43 +2,24 @@
 layout: default
 ---
 
-# Accumulator Loop
+# Counter Loop
 
-A common pattern in loops is to accumulate a value during the iteration of the loop.
+We use the counter pattern when we need to execute a block of code for every integer is some range. 
 
-<style>
-pre {
-        margin-top: 0em;
-}
-</style>
+The pervious `range()` example was a simple counter loop.
 
 ```python
-numLst = [ 2, 4, 3, 7 ]     |    sum = 0
-n      =   2                |    sum = sum + n
-                            |    sum =  0  + 2 = 2
-n      =      4             |    sum = sum + n
-                            |    sum =  2  + 4 = 6
-n      =         3          |    sum = sum + n
-                            |    sum =  6  + 3 = 9
-n      =            7       |    sum = sum + n
-                            |    sum =  9  + 7 = 16
-sum = 16
-```
-{: style="font-size: 1.1em; padding-right: 70px; padding-top: 0px; float: right; margin-top: 0"}
-
-
-```python
-numLst = [2, 4, 3, 7]
-sum = 0
-for n in numLst:
-    sum = sum + n
-print(sum)
+for i in range(6):
+    if (i % 2) == 0:
+        print(i)
 
 --- output ---
-16
-
+0
+2
+4
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
 
-**`sum`** is *incremented* by the value of **`num`**.
+<iframe style="position:absolute; top:400px; left: 600px;" src="https://trinket.io/embed/python3/4281351607" width="1050" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen align="right"></iframe>
+
 
