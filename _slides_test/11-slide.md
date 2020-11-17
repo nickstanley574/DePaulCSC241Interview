@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-
 # Accumulator Loop
 
-A common pattern in loops is to accumulate a value during the iteration of the loop.
+<iframe width="780" height="320" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=numLst%20%3D%20%5B2,%204,%203,%207%5D%0Asum%20%3D%200%0Afor%20n%20in%20numLst%3A%0A%20%20%20%20sum%20%3D%20sum%20%2B%20n%0Aprint%28sum%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
 
 <style>
 pre {
@@ -24,21 +24,5 @@ n      =            7       |    sum = sum + n
                             |    sum =  9  + 7 = 16
 sum = 16
 ```
-{: style="font-size: 1.1em; padding-right: 70px; padding-top: 0px; float: right; margin-top: 0"}
-
-
-```python
-numLst = [2, 4, 3, 7]
-sum = 0
-for n in numLst:
-    sum = sum + n
-print(sum)
-
---- output ---
-16
-
-```
-{: style="font-size: 1.1em; padding-left: 40px;"}
-
-**`sum`** is *incremented* by the value of **`num`**.
+{: style="font-size: 0.895em; padding-right: 0px; padding-top: 0px; float: right; margin-top: 0"}
 

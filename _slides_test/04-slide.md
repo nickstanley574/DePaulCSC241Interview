@@ -6,8 +6,7 @@ layout: default
 
 A list's items are indexed starting a `0`.
 ```python
-# index:
-#              0       1       2       3
+# index:       0       1       2       3
 vehicles = ['sedan','train','truck','plane']
 ```
 

@@ -3,8 +3,8 @@ layout: default
 ---
 
 
-# `list` in `<sequence>`
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
+# `for` Loop
+<img style="padding-right: 10px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 
 ```python
 for <variable> in <sequence>:
@@ -15,17 +15,8 @@ for <variable> in <sequence>:
 
 <hr>
 
-```python
-for i in ['sedan','train','truck','plane']:
-    print(i)
-print('Done.')
-
---- output ---
-sedan
-train
-truck
-plane
-Done.
-```
-{: style="font-size: 1.1em; padding-left: 40px;"}
+<div style="padding-top: 10px;">
+    <iframe width="850" height="300" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=for%20i%20in%20%5B'sedan','train','truck','plane'%5D%3A%0A%20%20%20%20print%28i%29%0Aprint%28'Done.'%29&codeDivHeight=410&codeDivWidth=450&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+</div>
+{: style="font-size: 1.1em; padding-left: 0px;"}
 

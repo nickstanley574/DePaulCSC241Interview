@@ -21,9 +21,9 @@
 >>>
 >>> education()
 'DePaul University'
-'   * Bachelors in Computer Science             2016'
-'   * Masters in Science Software Engineering   2019'
-'       * Graduate Assistant Program Tutor      2016 - 2019'
+'   * Bachelors in Computer Science         2016'
+'   * Masters in Software Engineering       2019'
+'       * Graduate Assistant Program Tutor  2016 - 2019'
 >>>
 >>> industry()
 '   * Discovery Education       2015 - 2019'
@@ -44,7 +44,7 @@
 
 ### Assumptions
 
-* You already have a basic understanding of the Python syntax 🐍. (indentation, `print()`, variable expressions)
+* You already have a basic understanding of the Python syntax 🐍. (indentation, `print()`, variable expressions, `-`,`+`,`/`,`*`,`%`, `<`,`<=`, `>=`, `>`, `if else` statements)
 
 * You are aware of what a `list` is and just need a quick refresher.
 
@@ -76,8 +76,7 @@ vehicles = ['sedan','train','truck','plane']
 
 A list's items are indexed starting a `0`.
 ```python
-# index:
-#              0       1       2       3
+# index:       0       1       2       3
 vehicles = ['sedan','train','truck','plane']
 ```
 
@@ -94,7 +93,7 @@ Lets access `'trains'` which is the 2nd item, but b/c indexing starts at `0` the
 
 # `for` Loop
 
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
+<img style="padding-right: 10px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 
 A `for` loop is used for iterating over a sequence.
 
@@ -107,13 +106,22 @@ for <variable> in <sequence>:
     <indented code block>
 <non-indented statement>
 ```
-{: style="font-size: 1.2em; padding-left: 40px; padding-top: 1px"}
+{: style="font-size: 1.1em; padding-left: 40px; padding-top: 1px"}
+
+<hr>
+
+```python
+for i in ['sedan','train','truck','plane']:
+    print(i)
+print('Done.')
+```
+{: style="font-size: 1.1em; padding-left: 40px; padding-top: 1px"}
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
 
-# `list` in `<sequence>`
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
+# `for` Loop
+<img style="padding-right: 10px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 
 ```python
 for <variable> in <sequence>:
@@ -124,25 +132,16 @@ for <variable> in <sequence>:
 
 <hr>
 
-```python
-for i in ['sedan','train','truck','plane']:
-    print(i)
-print('Done.')
-
---- output ---
-sedan
-train
-truck
-plane
-Done.
-```
-{: style="font-size: 1.1em; padding-left: 40px;"}
+<div style="padding-top: 10px;">
+    <iframe width="850" height="300" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=for%20i%20in%20%5B'sedan','train','truck','plane'%5D%3A%0A%20%20%20%20print%28i%29%0Aprint%28'Done.'%29&codeDivHeight=410&codeDivWidth=450&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+</div>
+{: style="font-size: 1.1em; padding-left: 0px;"}
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
 
 # Variable in `<sequence>`
-<img style="padding-right: 50px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
+<img style="padding-right: 10px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 ```python
 for <variable> in <sequence>:
     <indented code block>
@@ -166,23 +165,6 @@ plane
 Done.
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
-
----------------------------------------------------------------------------------------------------------------------------------
-
-# Variable in `<sequence>`
-```python
-for <variable> in <sequence>:
-    <indented code block>
-<non-indented statement>
-```
-{: style="font-size: 1.1em; padding-left: 40px;"}
-
-<div style="padding-top: 50px;">
-<iframe width="85%" height="370" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=vehicles%20%3D%20%5B'sedan','train','truck','plane'%5D%0Afor%20i%20in%20vehicles%3A%0A%20%20%20%20print%28i%29%0Aprint%28'Done.'%29&codeDivHeight=400&codeDivWidth=500&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-</div>
-
-<img style="position:absolute; top:140px; left: 1200px;" src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="450" align="right" >
-
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -225,11 +207,11 @@ for i in range(6):
 2
 4
 ```
-{: style="font-size: 1.1em; padding-left: 40px;"}
+{: style="font-size: 1.1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
 
-<iframe style="position:absolute; top:400px; left: 600px;" src="https://trinket.io/embed/python3/4281351607" width="1050" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen align="right"></iframe>
+<!-- <iframe style="position:absolute; top:400px; left: 600px;" src="https://trinket.io/embed/python3/4281351607" width="1050" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen align="right"></iframe> -->
 
-
+<iframe align="right" height="420px" width="900px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 ---------------------------------------------------------------------------------------------------------------------------------
 
 # Accumulator Loop
@@ -273,6 +255,54 @@ print(sum)
 **`sum`** is *incremented* by the value of **`num`**.
 
 ---------------------------------------------------------------------------------------------------------------------------------
+# Accumulator Loop
 
+<iframe width="780" height="320" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=numLst%20%3D%20%5B2,%204,%203,%207%5D%0Asum%20%3D%200%0Afor%20n%20in%20numLst%3A%0A%20%20%20%20sum%20%3D%20sum%20%2B%20n%0Aprint%28sum%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
+<style>
+pre {
+        margin-top: 0em;
+}
+</style>
+
+```python
+numLst = [ 2, 4, 3, 7 ]     |    sum = 0
+n      =   2                |    sum = sum + n
+                            |    sum =  0  + 2 = 2
+n      =      4             |    sum = sum + n
+                            |    sum =  2  + 4 = 6
+n      =         3          |    sum = sum + n
+                            |    sum =  6  + 3 = 9
+n      =            7       |    sum = sum + n
+                            |    sum =  9  + 7 = 16
+sum = 16
+```
+{: style="font-size: 0.895em; padding-right: 0px; padding-top: 0px; float: right; margin-top: 0"}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+# Iterations with Indexes 
+
+```python
+
+vehicles = ['sedan','train','truck','plane']
+
+# Iterating thought the items
+for v in vehicles:
+    print(v)
+print('Done.')
+
+
+# Iterating though the indexs
+for i in range(len(vehicles)):
+    print(vehicles[i])
+print('Done.')
+
+```
+{: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
+
+<iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+---------------------------------------------------------------------------------------------------------------------------------
 
 # End
