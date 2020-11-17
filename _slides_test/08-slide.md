@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 #  The `range()` Function
 
 `range()` allows users to generate a object of numbers within a given range.

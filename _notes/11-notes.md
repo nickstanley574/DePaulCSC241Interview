@@ -1,6 +1,4 @@
 ---
 layout: default
 ---
-# End
-
-
+# Accumulator Loop

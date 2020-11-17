@@ -7,7 +7,14 @@ title: Home
   {% for slide in site.slides_test %}
     <li>
       <a href="{{ slide.url }}">{{ slide.title }}</a>
-      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
+
+<ul>
+  {% for note in site.notes %}
+    <li>
+      <a href="{{ note.url }}">{{ note.title }}</a>
     </li>
   {% endfor %}
 </ul>

@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-
-# Iterations with Indexes 
+# Iterations with Indexes
 
 ```python
 

@@ -7,7 +7,6 @@
 ### Nicholas Stanley
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
 # Hello World
 
 ```python
@@ -29,9 +28,20 @@
 '   * Discovery Education       2015 - 2019'
 '   * Backstop Solutions Group  2019 - Present'
 ```
+{% comment %}
+
+* I graduated from DePaul University with a Bachelors Degree in Computer Science in 2016
+
+* I also graduated from DePaul with a Master in Software Engineering in 2019
+
+* During my master program I was in the Graduate Assistant program has a Tutor.
+
+* I am currently working at Backstop solutions as a Senior DevOps Engineer leading a team of 4.
+
+{% endcomment %}
+
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
 # Overview and Assumptions
 
 * A quick `list` review
@@ -49,7 +59,6 @@
 * You are aware of what a `list` is and just need a quick refresher.
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
 # Quick `list` Overview
 
 A list in python is just a sequence of objects.
@@ -70,8 +79,21 @@ Lists are represented as a comma-separated sequence enclosed with square bracket
 vehicles = ['sedan','train','truck','plane']
 ```
 
----------------------------------------------------------------------------------------------------------------------------------
+{% comment %}
 
+We humble human need to keep track of multiple things in our daily
+lives and to do that we make lists, a todo list, shopping list, a book list.
+
+In programming sometime you need to do the same thing and keep track of multiple values.
+
+To accomplish this, Python as a built in type and, because
+we programmers are unimaginative and like quick and effective
+ communication, it called you guest it a list.
+
+{% endcomment %}
+
+
+---------------------------------------------------------------------------------------------------------------------------------
 # Quick `list` Overview
 
 A list's items are indexed starting a `0`.
@@ -82,15 +104,41 @@ vehicles = ['sedan','train','truck','plane']
 
 Indexing operator: `list[index]`.
 
-Lets access `'trains'` which is the 2nd item, but b/c indexing starts at `0` the 2nd item is at index `1`.
+Lets access `'trains'` which is the 2nd item, but b/c indexing
+<br>
+starts at `0` the 2nd item is at index `1`.
+{: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
+
+
+<iframe align="right" height="340px" width="676px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+
 ```python
 >>> vehicles = ['sedan','train','truck','plane']
 >>> vehicles[1]
 >>> 'train'
 ```
+{: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
+
+
+
+
+{% comment %}
+
+You can also thing of index has position in a list.
+
+A list's items are indexed starting a zero.
+
+Lists are incredibly powerful objects and have a lot of built in
+methods to solve a whole host of problems, but for the
+purpose of this talk we are going to skip over them and
+focus on `for` loop and use the list to explore `for` list usability.
+
+
+
+{% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
 # `for` Loop
 
 <img style="padding-right: 10px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
@@ -118,9 +166,8 @@ print('Done.')
 {: style="font-size: 1.1em; padding-left: 40px; padding-top: 1px"}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
-
 # `for` Loop
+
 <img style="padding-right: 10px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 
 ```python
@@ -138,9 +185,8 @@ for <variable> in <sequence>:
 {: style="font-size: 1.1em; padding-left: 0px;"}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
-
 # Variable in `<sequence>`
+
 <img style="padding-right: 10px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >
 ```python
 for <variable> in <sequence>:
@@ -167,7 +213,6 @@ Done.
 {: style="font-size: 1.1em; padding-left: 40px;"}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
 #  The `range()` Function
 
 `range()` allows users to generate a object of numbers within a given range.
@@ -190,7 +235,6 @@ for i in range(6):
 {: style="font-size: 1.1em; padding-left: 40px;"}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
 # Counter Loop
 
 We use the counter pattern when we need to execute a block of code for every integer is some range. 
@@ -199,8 +243,7 @@ The pervious `range()` example was a simple counter loop.
 
 ```python
 for i in range(6):
-    if (i % 2) == 0:
-        print(i)
+    print(i)
 
 --- output ---
 0
@@ -209,11 +252,10 @@ for i in range(6):
 ```
 {: style="font-size: 1.1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
 
-<!-- <iframe style="position:absolute; top:400px; left: 600px;" src="https://trinket.io/embed/python3/4281351607" width="1050" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen align="right"></iframe> -->
 
 <iframe align="right" height="420px" width="900px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
----------------------------------------------------------------------------------------------------------------------------------
 
+---------------------------------------------------------------------------------------------------------------------------------
 # Accumulator Loop
 
 A common pattern in loops is to accumulate a value during the iteration of the loop.
@@ -277,8 +319,7 @@ accum = 16
 {: style="font-size: 0.895em; padding-right: 3px; padding-top: 0px; float: right; margin-top: 0"}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
-# Iterations with Indexes 
+# Iterations with Indexes
 
 ```python
 
@@ -300,8 +341,8 @@ print('Done.')
 
 <iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 ---------------------------------------------------------------------------------------------------------------------------------
-
 # Iterations with Indexes
+
 ```python
 # Check whether a list of numbers
 # is sorted in increasing order.
@@ -315,16 +356,23 @@ for i in lst:
 
 <iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
+{% comment %}
+
+the car is
+
+{% endcomment %}
+
 ---------------------------------------------------------------------------------------------------------------------------------
 # Loop Pattern: Nested Loop
 
----------------------------------------------------------------------------------------------------------------------------------
 
+---------------------------------------------------------------------------------------------------------------------------------
 # End
 
----------------------------------------------------------------------------------------------------------------------------------
 
+---------------------------------------------------------------------------------------------------------------------------------
 # Accumulator Loop
+
 
 ```python
 # find the index of the third occurrence of a word.

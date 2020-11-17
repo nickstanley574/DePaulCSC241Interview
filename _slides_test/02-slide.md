@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 # Overview and Assumptions
 
 * A quick `list` review

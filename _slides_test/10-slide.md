@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 # Accumulator Loop
 
 A common pattern in loops is to accumulate a value during the iteration of the loop.

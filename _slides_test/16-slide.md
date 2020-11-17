@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-
 # Accumulator Loop
+
 
 ```python
 # find the index of the third occurrence of a word.

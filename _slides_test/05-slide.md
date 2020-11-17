@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 # `for` Loop
 
 <img style="padding-right: 10px; " src="../../for_loop_flowchart.svg" alt="for_loop_flowchart" width="520" align="right" >

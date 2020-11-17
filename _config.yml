@@ -14,3 +14,6 @@ collections:
   slides_test:
     output: true
     permalink: slide/:title/
+  notes:
+    output: true
+    permalink: note/:title/
