@@ -225,26 +225,26 @@ pre {
 </style>
 
 ```python
-numLst = [ 2, 4, 3, 7 ]     |    sum = 0
-n      =   2                |    sum = sum + n
-                            |    sum =  0  + 2 = 2
-n      =      4             |    sum = sum + n
-                            |    sum =  2  + 4 = 6
-n      =         3          |    sum = sum + n
-                            |    sum =  6  + 3 = 9
-n      =            7       |    sum = sum + n
-                            |    sum =  9  + 7 = 16
-sum = 16
+numLst = [ 2, 4, 3, 7 ] |  accum = 0
+n      =   2            |  accum = accum  +  n
+                        |  accum =   0    +  2 = 2
+n      =      4         |  accum = accum  +  n
+                        |  accum =   2    +  4 = 6
+n      =         3      |  accum = accum  +  n
+                        |  accum =   6    +  3 = 9
+n      =            7   |  accum = accum  +  n
+                        |  accum =   9    +  7 = 16
+accum = 16
 ```
 {: style="font-size: 1.1em; padding-right: 70px; padding-top: 0px; float: right; margin-top: 0"}
 
 
 ```python
 numLst = [2, 4, 3, 7]
-sum = 0
+accum = 0
 for n in numLst:
-    sum = sum + n
-print(sum)
+    accum = accum + n
+print(accum)
 
 --- output ---
 16
@@ -257,28 +257,24 @@ print(sum)
 ---------------------------------------------------------------------------------------------------------------------------------
 # Accumulator Loop
 
-<iframe width="780" height="320" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=numLst%20%3D%20%5B2,%204,%203,%207%5D%0Asum%20%3D%200%0Afor%20n%20in%20numLst%3A%0A%20%20%20%20sum%20%3D%20sum%20%2B%20n%0Aprint%28sum%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<div style="padding-top: 85px;"></div>
 
+<iframe width="775" height="320" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=numLst%20%3D%20%5B2,%204,%203,%207%5D%0Aaccum%20%3D%200%0Afor%20n%20in%20numLst%3A%0A%20%20%20%20accum%20%3D%20accum%20%2B%20n%0Aprint%28accum%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
-<style>
-pre {
-        margin-top: 0em;
-}
-</style>
 
 ```python
-numLst = [ 2, 4, 3, 7 ]     |    sum = 0
-n      =   2                |    sum = sum + n
-                            |    sum =  0  + 2 = 2
-n      =      4             |    sum = sum + n
-                            |    sum =  2  + 4 = 6
-n      =         3          |    sum = sum + n
-                            |    sum =  6  + 3 = 9
-n      =            7       |    sum = sum + n
-                            |    sum =  9  + 7 = 16
-sum = 16
+numLst = [ 2, 4, 3, 7 ] |  accum = 0
+n      =   2            |  accum = accum  +  n
+                        |  accum =   0    +  2 = 2
+n      =      4         |  accum = accum  +  n
+                        |  accum =   2    +  4 = 6
+n      =         3      |  accum = accum  +  n
+                        |  accum =   6    +  3 = 9
+n      =            7   |  accum = accum  +  n
+                        |  accum =   9    +  7 = 16
+accum = 16
 ```
-{: style="font-size: 0.895em; padding-right: 0px; padding-top: 0px; float: right; margin-top: 0"}
+{: style="font-size: 0.895em; padding-right: 3px; padding-top: 0px; float: right; margin-top: 0"}
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -305,4 +301,35 @@ print('Done.')
 <iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 ---------------------------------------------------------------------------------------------------------------------------------
 
+# Iterations with Indexes
+```python
+# Check whether a list of numbers
+# is sorted in increasing order.
+
+lst = [1,2,3,4,5]
+
+for i in lst:
+    # now what?
+```
+{: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
+
+<iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+---------------------------------------------------------------------------------------------------------------------------------
+# Loop Pattern: Nested Loop
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 # End
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+# Accumulator Loop
+
+```python
+# find the index of the third occurrence of a word.
+
+# index    0     1     2     3     4     5
+words = ['cat','rug','cat','pie','cat','jet']
+
+```
