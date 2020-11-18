@@ -13,8 +13,11 @@ for i in range(6):
 
 --- output ---
 0
+1
 2
+3
 4
+5
 ```
 {: style="font-size: 1.1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
 

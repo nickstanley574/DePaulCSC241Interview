@@ -3,17 +3,45 @@ layout: default
 ---
 # Overview and Assumptions
 
-* A quick `list` review
+* `list` Review
 
-* Introduction into the `for` loops.
+* `for` Loop Introduction
 
-* Review the `range()` method.
+* `range()`
 
-* Explore Loop patterns Counter, Accumulator, index iteration
+* Loop Patterns - counter, accumulatorm, index iteration
 
 ### Assumptions
 
-* You already have a basic understanding of the Python syntax 🐍. (indentation, `print()`, variable expressions, `-`,`+`,`/`,`*`,`%`, `<`,`<=`, `>=`, `>`, `if else` statements)
+* The audience already has a basic understanding of the Python syntax 🐍.
+    * indentation
+    * `print()`
+    * variable expressions: `x = 1 `
+    *  Arithmetic operators: `- , + , /  , %`
+    * `if else` statements and comparison operators `< , <= , >=, >, == `
+<br><br>
+* The audience is aware of what a `list` is and just needs a refresher.
 
-* You are aware of what a `list` is and just need a quick refresher.
+{% comment %}
+
+* Let review what we are going to talk about in  presentation.
+
+    * We will to do a quick list review. What they are, and list indexing.
+
+    * Using `list` we are then going to explore what a `for` loop is and now it works.
+
+    * We are going to introuce the built in range() method.
+
+    * And then we are going to explore some loop pattern including counter, accumulator and index iteration.
+
+*  For this talk I made some assumptions
+
+    * One the audience has a basic understanding Python.
+
+        * indentation,   the `print()` statement
+
+        * basic if else statements
+
+        * basic Arithmetic operators and Comparison operators,
+{% endcomment %}
 

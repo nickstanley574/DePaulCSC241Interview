@@ -6,6 +6,10 @@
 
 ### Nicholas Stanley
 
+{% comment %}
+Play it by ear.
+{% endcomment %}
+
 ---------------------------------------------------------------------------------------------------------------------------------
 # Hello World
 
@@ -44,19 +48,47 @@
 ---------------------------------------------------------------------------------------------------------------------------------
 # Overview and Assumptions
 
-* A quick `list` review
+* `list` Review
 
-* Introduction into the `for` loops.
+* `for` Loop Introduction
 
-* Review the `range()` method.
+* `range()`
 
-* Explore Loop patterns Counter, Accumulator, index iteration
+* Loop Patterns - counter, accumulatorm, index iteration
 
 ### Assumptions
 
-* You already have a basic understanding of the Python syntax 🐍. (indentation, `print()`, variable expressions, `-`,`+`,`/`,`*`,`%`, `<`,`<=`, `>=`, `>`, `if else` statements)
+* The audience already has a basic understanding of the Python syntax 🐍.
+    * indentation
+    * `print()`
+    * variable expressions: `x = 1 `
+    *  Arithmetic operators: `- , + , /  , %`
+    * `if else` statements and comparison operators `< , <= , >=, >, == `
+<br><br>
+* The audience is aware of what a `list` is and just needs a refresher.
 
-* You are aware of what a `list` is and just need a quick refresher.
+{% comment %}
+
+* Let review what we are going to talk about in  presentation.
+
+    * We will to do a quick list review. What they are, and list indexing.
+
+    * Using `list` we are then going to explore what a `for` loop is and now it works.
+
+    * We are going to introuce the built in range() method.
+
+    * And then we are going to explore some loop pattern including counter, accumulator and index iteration.
+
+*  For this talk I made some assumptions
+
+    * One the audience has a basic understanding Python.
+
+        * indentation,   the `print()` statement
+
+        * basic if else statements
+
+        * basic Arithmetic operators and Comparison operators,
+{% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # Quick `list` Overview
@@ -81,14 +113,11 @@ vehicles = ['sedan','train','truck','plane']
 
 {% comment %}
 
-We humble human need to keep track of multiple things in our daily
-lives and to do that we make lists, a todo list, shopping list, a book list.
+We humble human need to keep track of multiple things in our daily lives and to do that we make lists, a todo list, shopping list, a book list.
 
 In programming sometime you need to do the same thing and keep track of multiple values.
 
-To accomplish this, Python as a built in type and, because
-we programmers are unimaginative and like quick and effective
- communication, it called you guest it a list.
+To accomplish this, Python as a built in type and, because we programmers are unimaginative and like quick and effective communication, it called you guest it a list.
 
 {% endcomment %}
 
@@ -102,15 +131,17 @@ A list's items are indexed starting a `0`.
 vehicles = ['sedan','train','truck','plane']
 ```
 
+<iframe align="right" height="410px" width="676px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+
 Indexing operator: `list[index]`.
+{: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
+
 
 Lets access `'trains'` which is the 2nd item, but b/c indexing
 <br>
 starts at `0` the 2nd item is at index `1`.
 {: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
-
-
-<iframe align="right" height="340px" width="676px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 
 ```python
@@ -247,8 +278,11 @@ for i in range(6):
 
 --- output ---
 0
+1
 2
+3
 4
+5
 ```
 {: style="font-size: 1.1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
 
@@ -364,6 +398,8 @@ the car is
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # Loop Pattern: Nested Loop
+
+
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
