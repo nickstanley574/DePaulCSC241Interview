@@ -1,24 +1,57 @@
 ---
 layout: default
 ---
-# Accumulator Loop
+# Loop Pattern: Accumulator Loop
 
-<div style="padding-top: 85px;"></div>
+A common pattern in loops is to accumulate a value during the iteration of the loop.
 
-<iframe width="775" height="320" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=numLst%20%3D%20%5B2,%204,%203,%207%5D%0Aaccum%20%3D%200%0Afor%20n%20in%20numLst%3A%0A%20%20%20%20accum%20%3D%20accum%20%2B%20n%0Aprint%28accum%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<style>
+pre {
+        margin-top: 0em;
+}
+</style>
+
+```python
+numLst = [ 2, 4, 3, 7 ] |  val = 0
+n      =   2            |  val = val  +  n
+                        |  val =  0   +  2 = 2
+n      =      4         |  val = val  +  n
+                        |  val =  2   +  4 = 6
+n      =         3      |  val = val  +  n
+                        |  val =  6   +  3 = 9
+n      =            7   |  val = val  +  n
+                        |  val =  9   +  7 = 16
+val = 16
+```
+{: style="font-size: 1.1em; padding-right: 70px; padding-top: 0px; float: right; margin-top: 0"}
 
 
 ```python
-numLst = [ 2, 4, 3, 7 ] |  accum = 0
-n      =   2            |  accum = accum  +  n
-                        |  accum =   0    +  2 = 2
-n      =      4         |  accum = accum  +  n
-                        |  accum =   2    +  4 = 6
-n      =         3      |  accum = accum  +  n
-                        |  accum =   6    +  3 = 9
-n      =            7   |  accum = accum  +  n
-                        |  accum =   9    +  7 = 16
-accum = 16
+numLst = [2, 4, 3, 7]
+val = 0
+for n in numLst:
+    val = val + n
+print(val)
+
+--- output ---
+16
+
 ```
-{: style="font-size: 0.895em; padding-right: 3px; padding-top: 0px; float: right; margin-top: 0"}
+{: style="font-size: 1.2em; padding-left: 50px;"}
+
+**`val`** is *incremented* by the value of **`num`**.
+
+{% comment %}
+
+This `for` loop “pattern” is to traverse a sequence, accumulating a value as we go, such as the sum-so-far 
+
+The anatomy of the accumulation pattern includes:
+* initializing an “accumulator” variable to an initial value
+* iterating thought the items in a sequence
+* updating the accumulator variable on each iteration
+
+* So in our case we we initialize our accumulator variable val.
+* When the iterate over the items in numLst.
+* Duing each iteration we update val.
+{% endcomment %}
 

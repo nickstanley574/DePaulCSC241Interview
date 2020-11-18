@@ -1,4 +1,6 @@
 ---
 layout: default
 ---
-# Variable in `<sequence>`
+# `for` Loop
+
+Lets explore this loop one mor time interativly.

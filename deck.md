@@ -15,8 +15,8 @@ Play it by ear.
 
 ```python
 # Yep a good old hello world cliché.
->>> print('Hello, world!')
-'Hello, world!'
+>>> print('Hello, world!!!')
+'Hello, world!!!'
 >>>
 >>> import getpass
 >>> print(getpass.getuser())
@@ -48,13 +48,15 @@ Play it by ear.
 ---------------------------------------------------------------------------------------------------------------------------------
 # Overview and Assumptions
 
+<img style="padding-right: 120px" src="../../perkovic.jpg" alt="book" width="270" align="right" >
+
 * `list` Review
 
 * `for` Loop Introduction
 
 * `range()`
 
-* Loop Patterns - counter, accumulatorm, index iteration
+* Loop Patterns - counter, Accumulator, index iteration
 
 ### Assumptions
 
@@ -83,11 +85,11 @@ Play it by ear.
 
     * One the audience has a basic understanding Python.
 
-        * indentation,   the `print()` statement
+        * indentation,   the `print()` statement, basic if else statements
 
-        * basic if else statements
+        * basic Arithmetic operators and Comparison operators
 
-        * basic Arithmetic operators and Comparison operators,
+        * You can think of this has a week 3 topic.
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -117,7 +119,7 @@ We humble human need to keep track of multiple things in our daily lives and to 
 
 In programming sometime you need to do the same thing and keep track of multiple values.
 
-To accomplish this, Python as a built in type and, because we programmers are unimaginative and like quick and effective communication, it called you guest it a list.
+To accomplish this, Python as a built in type and, because we programmers are unimaginative , it called you guest it a list.
 
 {% endcomment %}
 
@@ -152,22 +154,35 @@ starts at `0` the 2nd item is at index `1`.
 {: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
 
 
+{% comment %}
 
+You can think of index has position in a list.
+
+A list's items are indexed starting a zero. This pattern you will see thoughout your programing life. 
+
+{% endcomment %}
+---------------------------------------------------------------------------------------------------------------------------------
+# Quick `list` Overview
+
+The `len()` function returns the number of items in an list.
+
+```python
+>>> vehicles = ['sedan','train','truck','plane']
+>>> len(vehicles)
+>>> 4
+>>>
+>>> nums = [1,3,4,2,7,2]
+>>> len(nums)
+>>> 6
+```
 
 {% comment %}
 
-You can also thing of index has position in a list.
+The lenth of a list, which is also the number of items in the list can be found using the built in `len()` method.
 
-A list's items are indexed starting a zero.
-
-Lists are incredibly powerful objects and have a lot of built in
-methods to solve a whole host of problems, but for the
-purpose of this talk we are going to skip over them and
-focus on `for` loop and use the list to explore `for` list usability.
-
-
-
+Lists are incredibly powerful objects and have a lot of built in methods to solve a whole host of problems, but for the purpose of this talk we are going to move foward to the `for` loop and use lists to explore `for` usability.
 {% endcomment %}
+
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # `for` Loop
@@ -186,7 +201,7 @@ for <variable> in <sequence>:
 <non-indented statement>
 ```
 {: style="font-size: 1.1em; padding-left: 40px; padding-top: 1px"}
-
+<br>
 <hr>
 
 ```python
@@ -195,6 +210,26 @@ for i in ['sedan','train','truck','plane']:
 print('Done.')
 ```
 {: style="font-size: 1.1em; padding-left: 40px; padding-top: 1px"}
+
+{% comment %}
+
+A for is a control flow statement which allows code to be executed repeatedly. 
+
+Another way of saying that is a `for` loop is used for iterating over a sequence.
+
+**iterate** - the act of repeating; a repetition. If I have a shopping list and I read to you the items in apples, Milk, Chicken I am iterating over the items.
+
+In programing we call objects that can be iterated over **iterable**.
+
+Here we have the stucutre of the `for` loop in the python syntax. 
+
+The `<sequence>` must refer to an object that can be iterated over. We can use a `lists` for the sequence b/c a list is a iterable object.
+
+When the for loop is executed  it assigns the values in the `<sequence>` to `<variable>` one by one. Any code in the `<indented code block>` will be executed every time the loop runs until the last time in the `<sequence>` is reached.
+
+Flowchart review
+
+{% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # `for` Loop
@@ -214,6 +249,11 @@ for <variable> in <sequence>:
     <iframe width="850" height="300" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=for%20i%20in%20%5B'sedan','train','truck','plane'%5D%3A%0A%20%20%20%20print%28i%29%0Aprint%28'Done.'%29&codeDivHeight=410&codeDivWidth=450&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 </div>
 {: style="font-size: 1.1em; padding-left: 0px;"}
+
+{% comment %}
+
+Lets explore this loop one mor time interativly.
+{% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # Variable in `<sequence>`
@@ -243,6 +283,18 @@ Done.
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
 
+{% comment %}
+
+In the pervious eaxmple we saw a list hardcoded in the `<sequence>` position of the for loop.
+
+That is not a rule of for loops, in fact is not even the norm.
+
+Using we put a variable or method into the <sequence> position that refrances or returns a iterable.
+
+Here we can see the same loop has before but instead of having the list hardcoded were are using the `vehicles` variable
+
+{% endcomment %}
+
 ---------------------------------------------------------------------------------------------------------------------------------
 #  The `range()` Function
 
@@ -265,8 +317,13 @@ for i in range(6):
 ```
 {: style="font-size: 1.1em; padding-left: 40px;"}
 
+{% comment %}
+
+
+{% endcomment %}
+
 ---------------------------------------------------------------------------------------------------------------------------------
-# Counter Loop
+# Loop Pattern: Counter Loop
 
 We use the counter pattern when we need to execute a block of code for every integer is some range. 
 
@@ -284,13 +341,27 @@ for i in range(6):
 4
 5
 ```
-{: style="font-size: 1.1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
+{: style="font-size: 1.1em; padding-left: 40px; padding-top: 0px; float: left; margin-top: 0"}
 
 
 <iframe align="right" height="420px" width="900px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
+{% comment %}
+
+modulo operator (%), which returns the remainder of dividing two numbers.
+
+Even numbers divided by 2 never have a remainder while odd number always have a remainder.
+
+```python
+for i in range(6):
+  if (i % 2 == 0):
+    print(i)
+```
+
+{% endcomment %}
+
 ---------------------------------------------------------------------------------------------------------------------------------
-# Accumulator Loop
+# Loop Pattern: Accumulator Loop
 
 A common pattern in loops is to accumulate a value during the iteration of the loop.
 
@@ -301,59 +372,73 @@ pre {
 </style>
 
 ```python
-numLst = [ 2, 4, 3, 7 ] |  accum = 0
-n      =   2            |  accum = accum  +  n
-                        |  accum =   0    +  2 = 2
-n      =      4         |  accum = accum  +  n
-                        |  accum =   2    +  4 = 6
-n      =         3      |  accum = accum  +  n
-                        |  accum =   6    +  3 = 9
-n      =            7   |  accum = accum  +  n
-                        |  accum =   9    +  7 = 16
-accum = 16
+numLst = [ 2, 4, 3, 7 ] |  val = 0
+n      =   2            |  val = val  +  n
+                        |  val =  0   +  2 = 2
+n      =      4         |  val = val  +  n
+                        |  val =  2   +  4 = 6
+n      =         3      |  val = val  +  n
+                        |  val =  6   +  3 = 9
+n      =            7   |  val = val  +  n
+                        |  val =  9   +  7 = 16
+val = 16
 ```
 {: style="font-size: 1.1em; padding-right: 70px; padding-top: 0px; float: right; margin-top: 0"}
 
 
 ```python
 numLst = [2, 4, 3, 7]
-accum = 0
+val = 0
 for n in numLst:
-    accum = accum + n
-print(accum)
+    val = val + n
+print(val)
 
 --- output ---
 16
 
 ```
-{: style="font-size: 1.1em; padding-left: 40px;"}
+{: style="font-size: 1.2em; padding-left: 50px;"}
 
-**`sum`** is *incremented* by the value of **`num`**.
+**`val`** is *incremented* by the value of **`num`**.
+
+{% comment %}
+
+This `for` loop “pattern” is to traverse a sequence, accumulating a value as we go, such as the sum-so-far 
+
+The anatomy of the accumulation pattern includes:
+* initializing an “accumulator” variable to an initial value
+* iterating thought the items in a sequence
+* updating the accumulator variable on each iteration
+
+* So in our case we we initialize our accumulator variable val.
+* When the iterate over the items in numLst.
+* Duing each iteration we update val.
+{% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# Accumulator Loop
+# Loop Pattern: Accumulator Loop
 
 <div style="padding-top: 85px;"></div>
 
-<iframe width="775" height="320" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=numLst%20%3D%20%5B2,%204,%203,%207%5D%0Aaccum%20%3D%200%0Afor%20n%20in%20numLst%3A%0A%20%20%20%20accum%20%3D%20accum%20%2B%20n%0Aprint%28accum%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="775" height="320" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=numLst%20%3D%20%5B2,%204,%203,%207%5D%0Aval%20%3D%200%0Afor%20n%20in%20numLst%3A%0A%20%20%20%20val%20%3D%20val%20%2B%20n%0Aprint%28val%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 
 ```python
-numLst = [ 2, 4, 3, 7 ] |  accum = 0
-n      =   2            |  accum = accum  +  n
-                        |  accum =   0    +  2 = 2
-n      =      4         |  accum = accum  +  n
-                        |  accum =   2    +  4 = 6
-n      =         3      |  accum = accum  +  n
-                        |  accum =   6    +  3 = 9
-n      =            7   |  accum = accum  +  n
-                        |  accum =   9    +  7 = 16
-accum = 16
+numLst = [ 2, 4, 3, 7 ] |  val = 0
+n      =   2            |  val =  val  +  n
+                        |  val =   0   +  2 = 2
+n      =      4         |  val =  val  +  n
+                        |  val =   2   +  4 = 6
+n      =         3      |  val =  val  +  n
+                        |  val =   6   +  3 = 9
+n      =            7   |  val =  val  +  n
+                        |  val =   9   +  7 = 16
+val = 16
 ```
 {: style="font-size: 0.895em; padding-right: 3px; padding-top: 0px; float: right; margin-top: 0"}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# Iterations with Indexes
+# Loop Pattern: Iterations with Indexes
 
 ```python
 
@@ -375,7 +460,7 @@ print('Done.')
 
 <iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 ---------------------------------------------------------------------------------------------------------------------------------
-# Iterations with Indexes
+# Loop Pattern: Iterations with Indexes
 
 ```python
 # Check whether a list of numbers
@@ -392,8 +477,16 @@ for i in lst:
 
 {% comment %}
 
-the car is
+```python
+lst1 = [1,2,3,4,5]
+lst2 = [1,2,4,3,5]
 
+def isSorted(lst):
+  for i in range(len(lst)-1):
+    if lst[i] > lst[i+1]:
+      return False
+  return True
+ ````   
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------

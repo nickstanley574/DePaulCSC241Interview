@@ -1,24 +1,24 @@
 ---
 layout: default
 ---
-# Iterations with Indexes
+# Loop Pattern: Accumulator Loop
+
+<div style="padding-top: 85px;"></div>
+
+<iframe width="775" height="320" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=numLst%20%3D%20%5B2,%204,%203,%207%5D%0Aval%20%3D%200%0Afor%20n%20in%20numLst%3A%0A%20%20%20%20val%20%3D%20val%20%2B%20n%0Aprint%28val%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
 
 ```python
-
-vehicles = ['sedan','train','truck','plane']
-
-# Iterating thought the items
-for v in vehicles:
-    print(v)
-print('Done.')
-
-
-# Iterating though the indexs
-for i in range(len(vehicles)):
-    print(vehicles[i])
-print('Done.')
-
+numLst = [ 2, 4, 3, 7 ] |  val = 0
+n      =   2            |  val =  val  +  n
+                        |  val =   0   +  2 = 2
+n      =      4         |  val =  val  +  n
+                        |  val =   2   +  4 = 6
+n      =         3      |  val =  val  +  n
+                        |  val =   6   +  3 = 9
+n      =            7   |  val =  val  +  n
+                        |  val =   9   +  7 = 16
+val = 16
 ```
-{: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
+{: style="font-size: 0.895em; padding-right: 3px; padding-top: 0px; float: right; margin-top: 0"}
 
-<iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

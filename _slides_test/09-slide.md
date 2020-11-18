@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-# Counter Loop
+#  The `range()` Function
 
-We use the counter pattern when we need to execute a block of code for every integer is some range. 
+`range()` allows users to generate a object of numbers within a given range.
 
-The pervious `range()` example was a simple counter loop.
+We can put `range()` in the `<sequence>` section of a `for` b/c it returns a iterable object.
 
 ```python
+# create a sequence of 6 integers, and print each item in the sequence:
 for i in range(6):
     print(i)
 
@@ -19,8 +20,10 @@ for i in range(6):
 4
 5
 ```
-{: style="font-size: 1.1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
+{: style="font-size: 1.1em; padding-left: 40px;"}
+
+{% comment %}
 
 
-<iframe align="right" height="420px" width="900px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+{% endcomment %}
 

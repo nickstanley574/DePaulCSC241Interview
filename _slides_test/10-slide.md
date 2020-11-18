@@ -1,43 +1,40 @@
 ---
 layout: default
 ---
-# Accumulator Loop
+# Loop Pattern: Counter Loop
 
-A common pattern in loops is to accumulate a value during the iteration of the loop.
+We use the counter pattern when we need to execute a block of code for every integer is some range. 
 
-<style>
-pre {
-        margin-top: 0em;
-}
-</style>
+The pervious `range()` example was a simple counter loop.
 
 ```python
-numLst = [ 2, 4, 3, 7 ] |  accum = 0
-n      =   2            |  accum = accum  +  n
-                        |  accum =   0    +  2 = 2
-n      =      4         |  accum = accum  +  n
-                        |  accum =   2    +  4 = 6
-n      =         3      |  accum = accum  +  n
-                        |  accum =   6    +  3 = 9
-n      =            7   |  accum = accum  +  n
-                        |  accum =   9    +  7 = 16
-accum = 16
-```
-{: style="font-size: 1.1em; padding-right: 70px; padding-top: 0px; float: right; margin-top: 0"}
-
-
-```python
-numLst = [2, 4, 3, 7]
-accum = 0
-for n in numLst:
-    accum = accum + n
-print(accum)
+for i in range(6):
+    print(i)
 
 --- output ---
-16
-
+0
+1
+2
+3
+4
+5
 ```
-{: style="font-size: 1.1em; padding-left: 40px;"}
+{: style="font-size: 1.1em; padding-left: 40px; padding-top: 0px; float: left; margin-top: 0"}
 
-**`sum`** is *incremented* by the value of **`num`**.
+
+<iframe align="right" height="420px" width="900px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+{% comment %}
+
+modulo operator (%), which returns the remainder of dividing two numbers.
+
+Even numbers divided by 2 never have a remainder while odd number always have a remainder.
+
+```python
+for i in range(6):
+  if (i % 2 == 0):
+    print(i)
+```
+
+{% endcomment %}
 

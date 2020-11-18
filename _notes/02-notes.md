@@ -17,8 +17,8 @@ layout: default
 
     * One the audience has a basic understanding Python.
 
-        * indentation,   the `print()` statement
+        * indentation,   the `print()` statement, basic if else statements
 
-        * basic if else statements
+        * basic Arithmetic operators and Comparison operators
 
-        * basic Arithmetic operators and Comparison operators,
+        * You can think of this has a week 3 topic.

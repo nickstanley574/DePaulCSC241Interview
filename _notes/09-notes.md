@@ -1,4 +1,6 @@
 ---
 layout: default
 ---
-# Counter Loop
+#  The `range()` Function
+
+

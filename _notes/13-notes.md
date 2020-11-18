@@ -1,7 +1,4 @@
 ---
 layout: default
 ---
-# Iterations with Indexes
-
-the car is
-
+# Loop Pattern: Iterations with Indexes

@@ -5,8 +5,8 @@ layout: default
 
 ```python
 # Yep a good old hello world cliché.
->>> print('Hello, world!')
-'Hello, world!'
+>>> print('Hello, world!!!')
+'Hello, world!!!'
 >>>
 >>> import getpass
 >>> print(getpass.getuser())

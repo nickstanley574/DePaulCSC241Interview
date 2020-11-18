@@ -3,13 +3,15 @@ layout: default
 ---
 # Overview and Assumptions
 
+<img style="padding-right: 120px" src="../../perkovic.jpg" alt="book" width="270" align="right" >
+
 * `list` Review
 
 * `for` Loop Introduction
 
 * `range()`
 
-* Loop Patterns - counter, accumulatorm, index iteration
+* Loop Patterns - counter, Accumulator, index iteration
 
 ### Assumptions
 
@@ -38,10 +40,10 @@ layout: default
 
     * One the audience has a basic understanding Python.
 
-        * indentation,   the `print()` statement
+        * indentation,   the `print()` statement, basic if else statements
 
-        * basic if else statements
+        * basic Arithmetic operators and Comparison operators
 
-        * basic Arithmetic operators and Comparison operators,
+        * You can think of this has a week 3 topic.
 {% endcomment %}
 

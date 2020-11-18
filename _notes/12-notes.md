@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-# Iterations with Indexes
+# Loop Pattern: Accumulator Loop
