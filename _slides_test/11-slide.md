@@ -41,7 +41,7 @@ print(val)
 ```
 {: style="font-size: 1.25em; padding-left: 50px;"}
 
-**`val`** is *incremented* by **`num`**.
+**`val`** is *incremented* by **`n`**.
 
 {% comment %}
 
