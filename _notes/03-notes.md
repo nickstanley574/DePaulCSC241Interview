@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Quick `list` Overview
+# `list` Overview: Stucutre
 
 We humble human need to keep track of multiple things in our daily lives and to do that we make lists, a todo list, shopping list, a book list.
 

@@ -93,7 +93,7 @@ Play it by ear.
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# Quick `list` Overview
+# `list` Overview: Stucutre
 
 A list in python is just a sequence of objects.
 
@@ -125,7 +125,7 @@ To accomplish this, Python as a built in type and, because we programmers are un
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# Quick `list` Overview
+# `list` Overview: Indexes
 
 A list's items are indexed starting a `0`.
 ```python
@@ -160,9 +160,11 @@ You can think of index has position in a list.
 
 A list's items are indexed starting a zero. This pattern you will see thoughout your programing life. 
 
+OUT OF BOUNDS EXAMPLE: vehicles[4]
+
 {% endcomment %}
 ---------------------------------------------------------------------------------------------------------------------------------
-# Quick `list` Overview
+# `list` Overview: `len()`
 
 The `len()` function returns the number of items in an list.
 
@@ -223,9 +225,9 @@ In programing we call objects that can be iterated over **iterable**.
 
 Here we have the stucutre of the `for` loop in the python syntax. 
 
-The `<sequence>` must refer to an object that can be iterated over. We can use a `lists` for the sequence b/c a list is a iterable object.
+The `<sequence>` must refer to an object that can be iterated over. We can use a `lists` in the sequence postion b/c a list is a iterable object.
 
-When the for loop is executed  it assigns the values in the `<sequence>` to `<variable>` one by one. Any code in the `<indented code block>` will be executed every time the loop runs until the last time in the `<sequence>` is reached.
+When the for loop is executed  it assigns the values in the `<sequence>` to `<variable>` one by one. Any code in the `<indented code block>` will be executed every time the loop runs until the last item in the `<sequence>` is reached.
 
 Flowchart review
 
@@ -252,7 +254,12 @@ for <variable> in <sequence>:
 
 {% comment %}
 
-Lets explore this loop one mor time interativly.
+Lets explore this loop one more time interativly.
+
+I am using a tool called PYTHON VISUALIZE CODE EXECUTION from pythontutor.com
+
+for this. The RED arrow is the next line to be execute at the green is the line just execute.
+
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -285,22 +292,22 @@ Done.
 
 {% comment %}
 
-In the pervious eaxmple we saw a list hardcoded in the `<sequence>` position of the for loop.
+In the pervious example we saw a list hardcoded in the `<sequence>` position of the for loop.
 
 That is not a rule of for loops, in fact is not even the norm.
 
-Using we put a variable or method into the <sequence> position that refrances or returns a iterable.
+Ussually we put a variable or method into the <sequence> position that refers to or returns a iterable.
 
 Here we can see the same loop has before but instead of having the list hardcoded were are using the `vehicles` variable
 
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-#  The `range()` Function
+#  The `range()` Method
 
 `range()` allows users to generate a object of numbers within a given range.
 
-We can put `range()` in the `<sequence>` section of a `for` b/c it returns a iterable object.
+We can put `range()` in the `<sequence>` section of a `for` because it returns a iterable object.
 
 ```python
 # create a sequence of 6 integers, and print each item in the sequence:
@@ -319,13 +326,18 @@ for i in range(6):
 
 {% comment %}
 
+One of the built in methods that is used a lot with for loop in python in the `range()` method.
+
+Similar to list indexing the range method starts at 0. If we say giving me `range(6)` it will give back 0,1,2,3,4,5. Notice there are 6 elements returned, and we start at `0` and end at `5`.
+
+Again this is like list indexing at that is not accident. So keep that in mind.
 
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # Loop Pattern: Counter Loop
 
-We use the counter pattern when we need to execute a block of code for every integer is some range. 
+We use the counter pattern when we need to execute a block of code for every integer is some range.
 
 The pervious `range()` example was a simple counter loop.
 
@@ -347,6 +359,14 @@ for i in range(6):
 <iframe align="right" height="420px" width="900px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 {% comment %}
+
+Read and talk about slide.
+
+Lets explore something a little more intresting. So fair we have seen example that has only printed each item, but we are not limited to print.
+
+We can add other control flow statements, such as if statements.
+
+Lets modify this loop to only print the even numbers.
 
 modulo operator (%), which returns the remainder of dividing two numbers.
 
@@ -373,14 +393,16 @@ pre {
 
 ```python
 numLst = [ 2, 4, 3, 7 ] |  val = 0
-n      =   2            |  val = val  +  n
-                        |  val =  0   +  2 = 2
-n      =      4         |  val = val  +  n
-                        |  val =  2   +  4 = 6
-n      =         3      |  val = val  +  n
-                        |  val =  6   +  3 = 9
-n      =            7   |  val = val  +  n
-                        |  val =  9   +  7 = 16
+                        |  val = val  +  n
+                        |
+n      =   2            |  val =  0   +  2 = 2
+                        |
+n      =      4         |  val =  2   +  4 = 6
+                        |
+n      =         3      |  val =  6   +  3 = 9
+                        |
+n      =            7   |  val =  9   +  7 = 16
+                        |
 val = 16
 ```
 {: style="font-size: 1.1em; padding-right: 70px; padding-top: 0px; float: right; margin-top: 0"}
@@ -397,22 +419,26 @@ print(val)
 16
 
 ```
-{: style="font-size: 1.2em; padding-left: 50px;"}
+{: style="font-size: 1.25em; padding-left: 50px;"}
 
 **`val`** is *incremented* by the value of **`num`**.
 
 {% comment %}
 
-This `for` loop “pattern” is to traverse a sequence, accumulating a value as we go, such as the sum-so-far 
+The next for loop pattern we are going to explore is the accumulator loop.
 
-The anatomy of the accumulation pattern includes:
-* initializing an “accumulator” variable to an initial value
-* iterating thought the items in a sequence
-* updating the accumulator variable on each iteration
+This `for` loop “pattern” used to traverse a sequence, accumulating a value as we go, such as the sum-so-far 
 
+The accumulation pattern includes:
+* initializing an “accumulator” variable to an initial value.
+* iterating thought the items in a sequence.
+* updating the accumulator variable on each iteration.
+
+Ours
 * So in our case we we initialize our accumulator variable val.
 * When the iterate over the items in numLst.
 * Duing each iteration we update val.
+
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -425,20 +451,26 @@ The anatomy of the accumulation pattern includes:
 
 ```python
 numLst = [ 2, 4, 3, 7 ] |  val = 0
-n      =   2            |  val =  val  +  n
-                        |  val =   0   +  2 = 2
-n      =      4         |  val =  val  +  n
-                        |  val =   2   +  4 = 6
-n      =         3      |  val =  val  +  n
-                        |  val =   6   +  3 = 9
-n      =            7   |  val =  val  +  n
-                        |  val =   9   +  7 = 16
+                        |  val = val  +  n
+                        |
+n      =   2            |  val =  0   +  2 = 2
+                        |
+n      =      4         |  val =  2   +  4 = 6
+                        |
+n      =         3      |  val =  6   +  3 = 9
+                        |
+n      =            7   |  val =  9   +  7 = 16
+                        |
 val = 16
 ```
-{: style="font-size: 0.895em; padding-right: 3px; padding-top: 0px; float: right; margin-top: 0"}
+{: style="font-size: 0.9em; padding-right: 5px; padding-top: 0px; float: right; margin-top: 0"}
+
+{% comment %}
+Lets explore this loop one more time interativly.
+{% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# Loop Pattern: Iterations with Indexes
+# Loop Pattern: Iterations thoughout the Indexes
 
 ```python
 
@@ -450,7 +482,7 @@ for v in vehicles:
 print('Done.')
 
 
-# Iterating though the indexs
+# Iterating though the indexes
 for i in range(len(vehicles)):
     print(vehicles[i])
 print('Done.')
@@ -459,6 +491,21 @@ print('Done.')
 {: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
 
 <iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+{% comment %}
+
+In every example we have Iterating thought the items of a list, python is very nice to use that is know how to iterate over the items, but there is another way.
+
+We can iterating though the indexs. Remeber the `range()` and `len()` methods we talked about eailer? We can use those to iterate over a list though the indexes.
+
+REPT.IT DEMO
+
+The index iteration is more complicate and less intuitive than the iterate though the items approach so why use it? 
+
+There are situations when you need to iterate by the index, for eaxmple ... 
+
+{% endcomment %}
+
 ---------------------------------------------------------------------------------------------------------------------------------
 # Loop Pattern: Iterations with Indexes
 
@@ -476,17 +523,27 @@ for i in lst:
 <iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 {% comment %}
+... consider the problem of checking weather a list of number is sorted in increasing order.
+
+You need Indexes interation
 
 ```python
-lst1 = [1,2,3,4,5]
-lst2 = [1,2,4,3,5]
+index:   0  1  2  3  4
+lst1 = [10,20,30,40,50]
+lst2 = [10,20,30,40,50]
 
 def isSorted(lst):
-  for i in range(len(lst)-1):
+  for i in range(len(lst)):   # range(len(lst)-1)
+    print (lst[i], ">", lst[i+1])
     if lst[i] > lst[i+1]:
+      print ("False")
       return False
   return True
  ````   
+
+ We got a out of bounds. The reason why is another off by 1 error. Since we do `i+1` that means on the last iteration. When i is `4` `i+1` is `5` and there is no idea at index 5.
+
+
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------

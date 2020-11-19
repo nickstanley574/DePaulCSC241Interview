@@ -39,9 +39,9 @@ In programing we call objects that can be iterated over **iterable**.
 
 Here we have the stucutre of the `for` loop in the python syntax. 
 
-The `<sequence>` must refer to an object that can be iterated over. We can use a `lists` for the sequence b/c a list is a iterable object.
+The `<sequence>` must refer to an object that can be iterated over. We can use a `lists` in the sequence postion b/c a list is a iterable object.
 
-When the for loop is executed  it assigns the values in the `<sequence>` to `<variable>` one by one. Any code in the `<indented code block>` will be executed every time the loop runs until the last time in the `<sequence>` is reached.
+When the for loop is executed  it assigns the values in the `<sequence>` to `<variable>` one by one. Any code in the `<indented code block>` will be executed every time the loop runs until the last item in the `<sequence>` is reached.
 
 Flowchart review
 

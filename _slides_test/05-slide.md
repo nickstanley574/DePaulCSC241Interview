@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Quick `list` Overview
+# `list` Overview: `len()`
 
 The `len()` function returns the number of items in an list.
 

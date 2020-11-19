@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Quick `list` Overview
+# `list` Overview: Indexes
 
 A list's items are indexed starting a `0`.
 ```python
@@ -35,5 +35,7 @@ starts at `0` the 2nd item is at index `1`.
 You can think of index has position in a list.
 
 A list's items are indexed starting a zero. This pattern you will see thoughout your programing life. 
+
+OUT OF BOUNDS EXAMPLE: vehicles[4]
 
 {% endcomment %}

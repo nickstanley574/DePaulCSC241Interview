@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-# Quick `list` Overview
+# `list` Overview: Indexes
 
 You can think of index has position in a list.
 
 A list's items are indexed starting a zero. This pattern you will see thoughout your programing life. 
+
+OUT OF BOUNDS EXAMPLE: vehicles[4]
 

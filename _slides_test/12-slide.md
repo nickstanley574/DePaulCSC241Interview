@@ -10,15 +10,21 @@ layout: default
 
 ```python
 numLst = [ 2, 4, 3, 7 ] |  val = 0
-n      =   2            |  val =  val  +  n
-                        |  val =   0   +  2 = 2
-n      =      4         |  val =  val  +  n
-                        |  val =   2   +  4 = 6
-n      =         3      |  val =  val  +  n
-                        |  val =   6   +  3 = 9
-n      =            7   |  val =  val  +  n
-                        |  val =   9   +  7 = 16
+                        |  val = val  +  n
+                        |
+n      =   2            |  val =  0   +  2 = 2
+                        |
+n      =      4         |  val =  2   +  4 = 6
+                        |
+n      =         3      |  val =  6   +  3 = 9
+                        |
+n      =            7   |  val =  9   +  7 = 16
+                        |
 val = 16
 ```
-{: style="font-size: 0.895em; padding-right: 3px; padding-top: 0px; float: right; margin-top: 0"}
+{: style="font-size: 0.9em; padding-right: 5px; padding-top: 0px; float: right; margin-top: 0"}
+
+{% comment %}
+Lets explore this loop one more time interativly.
+{% endcomment %}
 

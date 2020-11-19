@@ -3,7 +3,7 @@ layout: default
 ---
 # Loop Pattern: Counter Loop
 
-We use the counter pattern when we need to execute a block of code for every integer is some range. 
+We use the counter pattern when we need to execute a block of code for every integer is some range.
 
 The pervious `range()` example was a simple counter loop.
 
@@ -25,6 +25,14 @@ for i in range(6):
 <iframe align="right" height="420px" width="900px" src="https://repl.it/@nickstanley574/counterlloop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 {% comment %}
+
+Read and talk about slide.
+
+Lets explore something a little more intresting. So fair we have seen example that has only printed each item, but we are not limited to print.
+
+We can add other control flow statements, such as if statements.
+
+Lets modify this loop to only print the even numbers.
 
 modulo operator (%), which returns the remainder of dividing two numbers.
 

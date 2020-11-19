@@ -2,14 +2,24 @@
 layout: default
 ---
 # Loop Pattern: Iterations with Indexes
+... consider the problem of checking weather a list of number is sorted in increasing order.
+
+You need Indexes interation
 
 ```python
-lst1 = [1,2,3,4,5]
-lst2 = [1,2,4,3,5]
+index:   0  1  2  3  4
+lst1 = [10,20,30,40,50]
+lst2 = [10,20,30,40,50]
 
 def isSorted(lst):
-  for i in range(len(lst)-1):
+  for i in range(len(lst)):   # range(len(lst)-1)
+    print (lst[i], ">", lst[i+1])
     if lst[i] > lst[i+1]:
+      print ("False")
       return False
   return True
  ````   
+
+ We got a out of bounds. The reason why is another off by 1 error. Since we do `i+1` that means on the last iteration. When i is `4` `i+1` is `5` and there is no idea at index 5.
+
+
