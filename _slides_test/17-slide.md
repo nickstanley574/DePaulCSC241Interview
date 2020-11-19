@@ -1,13 +1,18 @@
 ---
 layout: default
 ---
-# Accumulator Loop
 
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-```python
-# find the index of the third occurrence of a word.
+.content {
+    height: 85%;
+    padding-left: 0px;
+}
+</style>
 
-# index    0     1     2     3     4     5
-words = ['cat','rug','cat','pie','cat','jet']
-
-```
+<img style="padding-top:70px" src="../../thankyou.jpg" alt="thankyou" width="900" >

@@ -9,3 +9,4 @@ In programming sometime you need to do the same thing and keep track of multiple
 
 To accomplish this, Python as a built in type and, because we programmers are unimaginative , it called you guest it a list.
 
+Talk about slide.

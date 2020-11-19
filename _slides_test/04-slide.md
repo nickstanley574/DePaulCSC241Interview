@@ -16,7 +16,7 @@ Indexing operator: `list[index]`.
 {: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
 
 
-Lets access `'trains'` which is the 2nd item, but b/c indexing
+Lets access `'train'` which is the 2nd item, but b/c indexing
 <br>
 starts at `0` the 2nd item is at index `1`.
 {: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
@@ -36,6 +36,11 @@ You can think of index has position in a list.
 
 A list's items are indexed starting a zero. This pattern you will see thoughout your programing life. 
 
+Indexing operator is a list bracket the index you want closed bracket.
+
+Lets explore this. If the embeded IDE is to small please let me know. 
+
 OUT OF BOUNDS EXAMPLE: vehicles[4]
+
 
 {% endcomment %}

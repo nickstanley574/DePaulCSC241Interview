@@ -31,6 +31,8 @@ We can iterating though the indexs. Remeber the `range()` and `len()` methods we
 
 REPT.IT DEMO
 
+Indexing operator: list[index]
+
 The index iteration is more complicate and less intuitive than the iterate though the items approach so why use it? 
 
 There are situations when you need to iterate by the index, for eaxmple ... 

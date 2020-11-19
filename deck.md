@@ -34,13 +34,15 @@ Play it by ear.
 ```
 {% comment %}
 
-* I graduated from DePaul University with a Bachelors Degree in Computer Science in 2016
+* I earned a Bachelors Degree in Computer Science from DePaul University in 2016
 
-* I also graduated from DePaul with a Master in Software Engineering in 2019
+* I coninuted my education and graduated from DePaul with a Master in Software Engineering in 2019
 
 * During my master program I was in the Graduate Assistant program has a Tutor.
 
-* I am currently working at Backstop solutions as a Senior DevOps Engineer leading a team of 4.
+* I worked at a company called Discovery Education which was owned by Discovery Channel and made online cleaning tools for students k-12.
+
+* I am currently working at Backstop solutions as a Senior DevOps Engineer.
 
 {% endcomment %}
 
@@ -71,25 +73,25 @@ Play it by ear.
 
 {% comment %}
 
-* Let review what we are going to talk about in  presentation.
+* Let review what we are going to talk about today.
 
-    * We will to do a quick list review. What they are, and list indexing.
+    * We will to do a quick list review. What they are and list indexing.
 
-    * Using `list` we are then going to explore what a `for` loop is and now it works.
+    * Using `lists` we are then going to explore what a `for` loop is and how it works.
 
     * We are going to introuce the built in range() method.
 
     * And then we are going to explore some loop pattern including counter, accumulator and index iteration.
 
 *  For this talk I made some assumptions
-
     * One the audience has a basic understanding Python.
-
-        * indentation,   the `print()` statement, basic if else statements
-
+        * indentation, the `print()` statement, basic if else statements
         * basic Arithmetic operators and Comparison operators
+        * You can think of this has a week 3-4 topic.
 
-        * You can think of this has a week 3 topic.
+I used the "Introduction to Computering Using Python" by Prof. Perkovic to help develop this talk. 
+
+With that lets get started with our list overview.
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -121,6 +123,7 @@ In programming sometime you need to do the same thing and keep track of multiple
 
 To accomplish this, Python as a built in type and, because we programmers are unimaginative , it called you guest it a list.
 
+Talk about slide.
 {% endcomment %}
 
 
@@ -140,7 +143,7 @@ Indexing operator: `list[index]`.
 {: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
 
 
-Lets access `'trains'` which is the 2nd item, but b/c indexing
+Lets access `'train'` which is the 2nd item, but b/c indexing
 <br>
 starts at `0` the 2nd item is at index `1`.
 {: style="font-size: 1em; padding-right: 0px; padding-top: 0px; float: left; margin-top: 0"}
@@ -160,7 +163,12 @@ You can think of index has position in a list.
 
 A list's items are indexed starting a zero. This pattern you will see thoughout your programing life. 
 
+Indexing operator is a list bracket the index you want closed bracket.
+
+Lets explore this. If the embeded IDE is to small please let me know. 
+
 OUT OF BOUNDS EXAMPLE: vehicles[4]
+
 
 {% endcomment %}
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -180,7 +188,9 @@ The `len()` function returns the number of items in a list.
 
 {% comment %}
 
-The lenth of a list, which is also the number of items in the list can be found using the built in `len()` method.
+SLIDE
+
+len is a function buit into python that returns the number if items the list.
 
 Lists are incredibly powerful objects and have a lot of built in methods to solve a whole host of problems, but for the purpose of this talk we are going to move foward to the `for` loop and use lists to explore `for` usability.
 {% endcomment %}
@@ -500,6 +510,8 @@ We can iterating though the indexs. Remeber the `range()` and `len()` methods we
 
 REPT.IT DEMO
 
+Indexing operator: list[index]
+
 The index iteration is more complicate and less intuitive than the iterate though the items approach so why use it? 
 
 There are situations when you need to iterate by the index, for eaxmple ... 
@@ -528,9 +540,9 @@ for i in lst:
 You need Indexes interation
 
 ```python
-index:   0  1  2  3  4
-lst1 = [10,20,30,40,50]
-lst2 = [10,20,40,30,50]
+#index:  0  1  2  3  4
+lst1 = [10,20,40,30,50] 
+lst2 = [10,20,30,40,50]
 
 def isSorted(lst):
   for i in range(len(lst)):   # range(len(lst)-1)
@@ -540,32 +552,70 @@ def isSorted(lst):
       return False
   return True
  ````
+Indexing operator: `list[index]`
 
  We got a out of bounds. The reason why is another off by 1 error. Since we do `i+1` that means on the last iteration. When i is `4` `i+1` is `5` and there is no idea at index 5.
 
  To fix this we need to doe a -1 at the end of our range().
 
+{% endcomment %}
+---------------------------------------------------------------------------------------------------------------------------------
+# Loop Pattern: Nested Loops
 
+A nested loop is a loop within a loop, an inner loop within the body of an outer one. 
+
+```python
+for i in range(3):
+    print("Outer Loop  i=" + str(i))
+    for j in range(3):
+        print ("inner loop: i=" + str(i) + " j=" + str(j))
+
+--- output ---
+Outer Loop  i=0
+inner loop: i=0 j=0
+inner loop: i=0 j=1
+inner loop: i=0 j=2
+Outer Loop  i=1
+inner loop: i=1 j=0
+inner loop: i=1 j=1
+inner loop: i=1 j=2
+Outer Loop  i=2
+inner loop: i=2 j=0
+inner loop: i=2 j=1
+inner loop: i=2 j=2
+
+```
+
+
+
+{% comment %}
+The last loop pattern I am going to introduce in the nested loop.
+
+A nested loop is a loop within a loop, an inner loop within the body of an outer one. 
+
+How this works is that the first pass of the outer loop triggers the inner loop, which executes to completion. Then the second pass of the outer loop triggers the inner loop again. This repeats until the outer loop finishes.
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# Loop Pattern: Nested Loop
+# Questions
 
+<img style="padding-right: 200px; padding-top:20px" src="../../question-mark.jpg" alt="question" width="700" align="right" >
 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# End
 
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
----------------------------------------------------------------------------------------------------------------------------------
-# Accumulator Loop
+.content {
+    height: 85%;
+    padding-left: 0px;
+}
+</style>
 
-
-```python
-# find the index of the third occurrence of a word.
-
-# index    0     1     2     3     4     5
-words = ['cat','rug','cat','pie','cat','jet']
-
-```
+<img style="padding-top:70px" src="../../thankyou.jpg" alt="thankyou" width="900" >
