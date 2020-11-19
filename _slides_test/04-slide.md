@@ -3,7 +3,7 @@ layout: default
 ---
 # `list` Overview: Indexes
 
-A list's items are indexed starting a `0`.
+A list's items are indexed starting at `0`.
 ```python
 # index:       0       1       2       3
 vehicles = ['sedan','train','truck','plane']

@@ -2,13 +2,11 @@
 layout: default
 ---
 # Loop Pattern: Iterations with Indexes
-... consider the problem of checking weather a list of number is sorted in increasing order.
-
-You need Indexes interation
+... consider the problem of checking wheater a list of number is sorted in increasing order. ... You need Indexes interation
 
 ```python
 #index:  0  1  2  3  4
-lst1 = [10,20,40,30,50] 
+lst1 = [10,20,40,30,50]
 lst2 = [10,20,30,40,50]
 
 def isSorted(lst):

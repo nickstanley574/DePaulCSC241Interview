@@ -17,13 +17,11 @@ for i in lst:
 <iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 {% comment %}
-... consider the problem of checking weather a list of number is sorted in increasing order.
-
-You need Indexes interation
+... consider the problem of checking wheater a list of number is sorted in increasing order. ... You need Indexes interation
 
 ```python
 #index:  0  1  2  3  4
-lst1 = [10,20,40,30,50] 
+lst1 = [10,20,40,30,50]
 lst2 = [10,20,30,40,50]
 
 def isSorted(lst):

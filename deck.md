@@ -130,7 +130,7 @@ Talk about slide.
 ---------------------------------------------------------------------------------------------------------------------------------
 # `list` Overview: Indexes
 
-A list's items are indexed starting a `0`.
+A list's items are indexed starting at `0`.
 ```python
 # index:       0       1       2       3
 vehicles = ['sedan','train','truck','plane']
@@ -306,7 +306,7 @@ In the pervious example we saw a list hardcoded in the `<sequence>` position of 
 
 That is not a rule of for loops, in fact is not even the norm.
 
-Ussually we put a variable or method into the <sequence> position that refers to or returns a iterable.
+Ussually we put a variable or method into the `<sequence>` position that refers to or returns a iterable.
 
 Here we can see the same loop has before but instead of having the list hardcoded were are using the `vehicles` variable
 
@@ -338,6 +338,8 @@ for i in range(6):
 
 One of the built in methods that is used a lot with for loop in python in the `range()` method.
 
+READ SLIDE
+
 Similar to list indexing the range method starts at 0. If we say giving me `range(6)` it will give back 0,1,2,3,4,5. Notice there are 6 elements returned, and we start at `0` and end at `5`.
 
 Again this is like list indexing at that is not accident. So keep that in mind.
@@ -347,7 +349,7 @@ Again this is like list indexing at that is not accident. So keep that in mind.
 ---------------------------------------------------------------------------------------------------------------------------------
 # Loop Pattern: Counter Loop
 
-We use the counter pattern when we need to execute a block of code for every integer is some range.
+We use the counter pattern when we need to execute a block of code for every integer in some range.
 
 The previous `range()` example was a simple counter loop.
 
@@ -370,7 +372,7 @@ for i in range(6):
 
 {% comment %}
 
-Read and talk about slide.
+READ SLIDE
 
 Lets explore something a little more intresting. So fair we have seen example that has only printed each item, but we are not limited to print.
 
@@ -437,7 +439,7 @@ print(val)
 
 The next for loop pattern we are going to explore is the accumulator loop.
 
-This `for` loop “pattern” used to traverse a sequence, accumulating a value as we go, such as the sum-so-far 
+To do this we iterate over a sequence, accumulating a value as we go, such as the sum-so-far 
 
 The accumulation pattern includes:
 * initializing an “accumulator” variable to an initial value.
@@ -486,13 +488,13 @@ Lets explore this loop one more time interativly.
 
 vehicles = ['sedan','train','truck','plane']
 
-# Iterating thought the items
+# Iterating through the items
 for v in vehicles:
     print(v)
 print('Done.')
 
 
-# Iterating though the indexes
+# Iterating through the indexes
 for i in range(len(vehicles)):
     print(vehicles[i])
 print('Done.')
@@ -535,13 +537,11 @@ for i in lst:
 <iframe  align="right" height="550px"  width=790px src="https://repl.it/@nickstanley574/iterationwithindexes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 {% comment %}
-... consider the problem of checking weather a list of number is sorted in increasing order.
-
-You need Indexes interation
+... consider the problem of checking wheater a list of number is sorted in increasing order. ... You need Indexes interation
 
 ```python
 #index:  0  1  2  3  4
-lst1 = [10,20,40,30,50] 
+lst1 = [10,20,40,30,50]
 lst2 = [10,20,30,40,50]
 
 def isSorted(lst):

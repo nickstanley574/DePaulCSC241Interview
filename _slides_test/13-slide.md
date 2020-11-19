@@ -7,13 +7,13 @@ layout: default
 
 vehicles = ['sedan','train','truck','plane']
 
-# Iterating thought the items
+# Iterating through the items
 for v in vehicles:
     print(v)
 print('Done.')
 
 
-# Iterating though the indexes
+# Iterating through the indexes
 for i in range(len(vehicles)):
     print(vehicles[i])
 print('Done.')

@@ -5,7 +5,7 @@ layout: default
 
 The next for loop pattern we are going to explore is the accumulator loop.
 
-This `for` loop “pattern” used to traverse a sequence, accumulating a value as we go, such as the sum-so-far 
+To do this we iterate over a sequence, accumulating a value as we go, such as the sum-so-far 
 
 The accumulation pattern includes:
 * initializing an “accumulator” variable to an initial value.
