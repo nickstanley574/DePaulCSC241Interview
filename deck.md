@@ -93,7 +93,7 @@ Play it by ear.
 {% endcomment %}
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# `list` Overview: Stucutre
+# `list` Overview: Structure
 
 A list in python is just a sequence of objects.
 
@@ -166,7 +166,7 @@ OUT OF BOUNDS EXAMPLE: vehicles[4]
 ---------------------------------------------------------------------------------------------------------------------------------
 # `list` Overview: `len()`
 
-The `len()` function returns the number of items in an list.
+The `len()` function returns the number of items in a list.
 
 ```python
 >>> vehicles = ['sedan','train','truck','plane']
@@ -339,7 +339,7 @@ Again this is like list indexing at that is not accident. So keep that in mind.
 
 We use the counter pattern when we need to execute a block of code for every integer is some range.
 
-The pervious `range()` example was a simple counter loop.
+The previous `range()` example was a simple counter loop.
 
 ```python
 for i in range(6):
@@ -421,7 +421,7 @@ print(val)
 ```
 {: style="font-size: 1.25em; padding-left: 50px;"}
 
-**`val`** is *incremented* by the value of **`num`**.
+**`val`** is *incremented* by **`num`**.
 
 {% comment %}
 
@@ -530,7 +530,7 @@ You need Indexes interation
 ```python
 index:   0  1  2  3  4
 lst1 = [10,20,30,40,50]
-lst2 = [10,20,30,40,50]
+lst2 = [10,20,40,30,50]
 
 def isSorted(lst):
   for i in range(len(lst)):   # range(len(lst)-1)
@@ -539,9 +539,11 @@ def isSorted(lst):
       print ("False")
       return False
   return True
- ````   
+ ````
 
  We got a out of bounds. The reason why is another off by 1 error. Since we do `i+1` that means on the last iteration. When i is `4` `i+1` is `5` and there is no idea at index 5.
+
+ To fix this we need to doe a -1 at the end of our range().
 
 
 {% endcomment %}

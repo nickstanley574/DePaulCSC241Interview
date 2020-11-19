@@ -3,7 +3,7 @@ layout: default
 ---
 # `list` Overview: `len()`
 
-The `len()` function returns the number of items in an list.
+The `len()` function returns the number of items in a list.
 
 ```python
 >>> vehicles = ['sedan','train','truck','plane']

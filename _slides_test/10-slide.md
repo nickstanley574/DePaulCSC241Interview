@@ -5,7 +5,7 @@ layout: default
 
 We use the counter pattern when we need to execute a block of code for every integer is some range.
 
-The pervious `range()` example was a simple counter loop.
+The previous `range()` example was a simple counter loop.
 
 ```python
 for i in range(6):

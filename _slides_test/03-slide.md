@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# `list` Overview: Stucutre
+# `list` Overview: Structure
 
 A list in python is just a sequence of objects.
 
